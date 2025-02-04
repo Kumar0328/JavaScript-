@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Read</title>
+</head>
+
+<body>
+
+    <ul id="mybutton">
+
+    </ul>
+    <button>Click</button>
+    <script>
+        var arr1 = ["Ram", "Krishna", "Rhim", "john", "hanuman"];
+
+        for (i = 0; i < arr1.length; i++) {
+            var myui = document.createElement("li");
+            document.getElementById("mybutton").appendChild(myui);
+            myui.innerHTML = arr1[i];
+        }
+
+        // for (i = 0; i < arr1.length; i++) {
+        //     var create = document.createElement("button");
+        //     document.getElementById("mybutton").appendChild(create);
+        //     create.innerHTML = arr1[i]
+        //     }
+
+
+
+    </script>
+
+</body>
+
+</html>

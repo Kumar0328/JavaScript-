@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <script>
+
+        let myDiv = document.createElement("div");
+        let myTable = document.createElement("table");
+        myTable.style.border = "1px solid red";
+
+
+        let mythead = document.createElement("thead");
+        
+        let mytbody = document.createElement("tbody");
+
+        for(i=0; i<=10; i++){
+        let myth = document.createElement("th");
+        
+        mythead.appendChild(myth);
+        myth.innerHTML = "Heading";
+    }
+        
+
+
+        
+        myTable.appendChild(mythead);
+        myTable.appendChild(mytbody);
+        myDiv.appendChild(myTable);
+        document.body.appendChild(myDiv);
+
+    </script>
+
+</body>
+
+</html>

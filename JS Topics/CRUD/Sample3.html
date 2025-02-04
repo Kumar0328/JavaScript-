@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+
+<body>
+
+    <div id="myId">
+
+    </div>
+
+    <script>
+
+        // var images = [
+        //     "https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbeautiful%2F&psig=AOvVaw0GvTlWHqxjEzPEHsj3TGa_&ust=1738649958755000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjol_3tposDFQAAAAAdAAAAABAE",
+        //     "https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fbeauty-in-nature&psig=AOvVaw0GvTlWHqxjEzPEHsj3TGa_&ust=1738649958755000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjol_3tposDFQAAAAAdAAAAABAI",
+        //     "https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fsun-valley%3Fpage%3D37&psig=AOvVaw0GvTlWHqxjEzPEHsj3TGa_&ust=1738649958755000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjol_3tposDFQAAAAAdAAAAABAY",
+        //     "https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Ftraffic-light-performers.html&psig=AOvVaw0GvTlWHqxjEzPEHsj3TGa_&ust=1738649958755000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjol_3tposDFQAAAAAdAAAAABAn"
+        // ]
+
+        // images.forEach(function (val){
+        //     console.log(val);
+        // })
+
+        // var ull = document.createElement("ul");
+        // for(i=0; i<=5; i++){
+        //     var lii = document.createElement("li");
+        //     lii.innerHTML = "Hello World";
+        //     ull.appendChild(lii);
+        // }
+        // document.getElementById("myId").appendChild(ull);
+
+        var mytable = document.createElement("table");
+        mytable.setAttribute("border", "1");
+        var mythead = document.createElement("thead");
+        var mytbody = document.createElement("tbody");
+        var mytr = document.createElement("tr");
+
+        for (i = 0; i <= 5; i++) {
+            var myth = document.createElement("th");
+            myth.innerHTML = "Heading";
+            mytr.appendChild(myth);
+
+        }
+
+        for (i = 0; i <= 5; i++) {
+            var mybodytr = document.createElement("tr");
+            for (j = 0; j <= 5; j++) {
+            var mytbodytd = document.createElement("td");
+            mytbodytd.innerHTML = "Data is Displayed";
+            mybodytr.appendChild(mytbodytd);
+        }
+            mytbody.appendChild(mybodytr);
+
+        }
+        
+
+        mythead.appendChild(mytr);
+
+        mytable.appendChild(mythead);
+        mytable.appendChild(mytbody);
+
+        document.getElementById("myId").appendChild(mytable);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

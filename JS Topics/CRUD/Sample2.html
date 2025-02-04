@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List App</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #taskList { margin-top: 20px; }
+    .task { display: flex; justify-content: space-between; margin: 5px 0; }
+    button { margin-left: 5px; }
+  </style>
+</head>
+<body>
+  <h1>To-Do List App</h1>
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  <button onclick="addTask()">Add Task</button>
+  <div id="taskList"></div>
+
+  <script>
+    let tasks = [];
+
+    function addTask() {
+      const taskInput = document.getElementById('taskInput');
+      const task = taskInput.value.trim();
+      if (task) {
+        tasks.push({ id: Date.now(), task });
+        taskInput.value = '';
+        renderTasks();
+      }
+    }
+
+    function renderTasks() {
+      const taskList = document.getElementById('taskList');
+      taskList.innerHTML = '';
+      tasks.forEach(t => {
+        const taskItem = document.createElement('div');
+        taskItem.className = 'task';
+        taskItem.innerHTML = `
+          <span>${t.task}</span>
+          <button onclick="editTask(${t.id})">Edit</button>
+          <button onclick="deleteTask(${t.id})">Delete</button>
+        `;
+        taskList.appendChild(taskItem);
+      });
+    }
+
+    function editTask(id) {
+      const newTask = prompt('Edit your task:');
+      if (newTask) {
+        tasks = tasks.map(t => t.id === id ? { ...t, task: newTask } : t);
+        renderTasks();
+      }
+    }
+
+    function deleteTask(id) {
+      tasks = tasks.filter(t => t.id !== id);
+      renderTasks();
+    }
+  </script>
+</body>
+</html>
