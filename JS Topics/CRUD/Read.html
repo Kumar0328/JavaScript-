@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read in CRUD</title>
+</head>
+
+<body>
+    <script>
+
+        let usersArr = [
+            { id: 1, name: 'Alice', age: 25, city: 'New York', isActive: true },
+            { id: 2, name: 'Bob', age: 30, city: 'Los Angeles', isActive: false },
+            { id: 3, name: 'Charlie', age: 28, city: 'Chicago', isActive: true },
+            { id: 4, name: 'David', age: 35, city: 'Houston', isActive: false },
+            { id: 5, name: 'Eva', age: 22, city: 'Miami', isActive: true }
+        ];
+        // console.log(usersArr);
+
+        let myDiv = document.createElement("div");
+        let myTable = document.createElement("table");
+        myTable.style.border = "2px solid red";
+        let myheading = document.createElement("thead");
+        // myheading.style.border = "2px solid blue";
+        let mytbody = document.createElement("tbody");
+        let myTr = document.createElement("tr");
+
+
+        for (i = 0; i <= 5; i++) {
+            let myTh = document.createElement("th");
+            myTh.style.border = "2px solid orange";
+            myTh.innerHTML = "My Heading";
+            myTr.appendChild(myTh);
+        }
+
+        usersArr.forEach((e, d)=>{
+            let mytbodytr = document.createElement("tr");
+            for(a in e){
+                let mytbodyData = document.createElement("td");
+                mytbodyData.innerHTML = e[a];
+                mytbodytr.appendChild(mytbodyData);
+            }
+            mytbody.appendChild(mytbodytr);
+            
+        })
+        
+
+        // for (i = 0; i <= 5; i++) {
+        //     let mybodytr = document.createElement("tr");
+        //     for (j = 0; j <= 5; j++) {
+        //         let myTdata = document.createElement("td");
+        //         myTdata.innerHTML = "my music";
+        //         mybodytr.appendChild(myTdata);
+        //     }
+
+        //     mytbody.appendChild(mybodytr);
+        // }
+
+
+
+
+
+
+
+
+
+
+        myheading.appendChild(myTr);
+        myDiv.appendChild(myTable);
+        myTable.appendChild(myheading);
+        myTable.appendChild(mytbody);
+        document.body.appendChild(myDiv);
+
+
+    </script>
+</body>
+
+</html>
