@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read2 in CRUD</title>
+</head>
+
+<body>
+
+    <table style="border: 2px solid black;" id="myID">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!-- <script>
+
+        const myData = [
+            {
+                id: 1,
+                name: "John",
+                age: 25,
+                city: "New York",
+                isActive: true
+            }
+        ];
+
+        let mytbody = document.createElement("tbody");
+
+        
+
+        // myData.forEach((e, d) => {
+
+        //     let mytbodytr = document.createElement("tr");
+        //     for (a in e) {
+        //         let mytrtd = document.createElement("td");
+        //     mytrtd.innerHTML = e[d];
+        //     mytbodytr.appendChild(mytrtd);
+        // }
+        //     mytbody.appendChild(mytbodytr);
+        // });
+        myData.forEach((e) => {
+        let mytbodytr = document.createElement("tr");
+        for (let a in e) {
+            let mytrtd = document.createElement("td");
+            mytrtd.innerHTML = e[a]; // Corrected line
+            mytbodytr.appendChild(mytrtd);
+        }
+
+        document.getElementById("myID").appendChild(mytbody);
+
+
+
+    </script> -->
+    <script>
+        const myData = [
+            {
+                id: 1,
+                name: "John",
+                age: 25,
+                city: "New York",
+                isActive: true
+            }
+        ];
+    
+        let mytbody = document.createElement("tbody");
+    
+        myData.forEach((e) => {
+            let mytbodytr = document.createElement("tr");
+            for (let a in e) {
+                let mytrtd = document.createElement("td");
+                mytrtd.innerHTML = e[a]; // Corrected line
+                mytbodytr.appendChild(mytrtd);
+            }
+            mytbody.appendChild(mytbodytr);
+        });
+    
+        document.getElementById("myID").appendChild(mytbody);
+    </script>
+    
+
+
+
+</body>
+
+</html>
