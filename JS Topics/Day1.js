@@ -38,11 +38,11 @@
 //     alert("GM")
 // }
 
-// function fun(a, d, f){
-//     console.log(a + d + f);
-//     // alert("Good Morning");
-// }
-// fun(1, 1, 1);
+function fun(a, d, f){
+    console.log(a + d + f);
+    // alert("Good Morning");
+}
+fun(1, 1, 1);
 
 function fun(){
     console.log("first")
