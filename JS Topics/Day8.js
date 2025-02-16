@@ -15,7 +15,7 @@
 //     }
 // }
 
-console.log(obj1.Adress.location);
+// console.log(obj1.Adress.location);
 
 
 
