@@ -33,10 +33,10 @@
 //     alert("Good Evening");
 // }
 
-function fun(){
-    console.log("Good Morning")
-    alert("GM")
-}
+// function fun(){
+//     console.log("Good Morning")
+//     alert("GM")
+// }
 
 function fun(a, d, f){
     console.log(a + d + f);
