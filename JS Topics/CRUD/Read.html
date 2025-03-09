@@ -11,7 +11,9 @@
 
     <button onclick="dataIsFetched()" > Click </button>
 
-    <script>
+    <div id="Div" ></div>
+
+    <!-- <script>
 
         let usersArr = [
             { id: 1, name: 'Alice', age: 25, city: 'New York', isActive: true },
@@ -78,6 +80,24 @@
         document.body.appendChild(myDiv);
 
 
+    </script> -->
+
+    <script>
+        var student = ["ram", "raju", "rahim", "roshan", ];
+
+        var mytable = document.createElement("table");
+        var mythead = document.createElement("thead");
+        var mytr = document.createElement("tr");
+        var mytbody = document.createElement("tbody");
+        var mytrtbody = document.createElement("tr");
+
+
+        document.getElementById("Div").appendChild(mytable);
+        mytable.appendChild(mythead);
+        mythead.appendChild(mytr);
+        mytable.appendChild(mytbody);
+        mytbody.appendChild(mytrtbody);
+    
     </script>
 </body>
 
