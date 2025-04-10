@@ -18,10 +18,10 @@
 // }
 // fun();
 
-function fun(){
-    console.log("Good Morning");
-    alert("Good Morning");
-}
+// function fun(){
+//     console.log("Good Morning");
+//     alert("Good Morning");
+// }
 // fun();
 // function fun(){
 //     console.log("first");
