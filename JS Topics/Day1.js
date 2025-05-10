@@ -28,10 +28,10 @@
 //     alert("Good Morning");
 // }
 
-function fun(){
-    console.log("first")
-    alert("Good Evening");
-}
+// function fun(){
+//     console.log("first")
+//     alert("Good Evening");
+// }
 
 function fun(){
     console.log("Good Morning")
@@ -39,6 +39,7 @@ function fun(){
 }
 
 function fun(a, d, f){
+
     console.log(a + d + f);
     // alert("Good Morning");
 }
