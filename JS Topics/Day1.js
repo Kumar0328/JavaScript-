@@ -30,10 +30,10 @@
 
 // func////////
 
-function fun(){
-    console.log("Good Morning")
-    alert("GM")
-}
+// function fun(){
+//     console.log("Good Morning")
+//     alert("GM")
+// }
 
 function fun(a, d, f){
 
