@@ -45,4 +45,8 @@ fun(1, 1, 1);
 function fun(){
     console.log("first")
 }
-fun();
+fun()
+
+function name(){
+console.log("first")
+}
