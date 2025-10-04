@@ -50,3 +50,7 @@ fun()
 function name(){
 console.log("first")
 }
+
+function name2(){
+    console.log("first");
+}
