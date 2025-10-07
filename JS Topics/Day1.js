@@ -58,3 +58,7 @@ function name2(){
 function name3(){
 console.log("first")
 }
+
+function name(){
+    console.log("first")
+}
